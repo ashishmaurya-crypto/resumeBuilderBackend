@@ -1,4 +1,5 @@
 const express = require('express');
+const serverless = require("serverless-http");
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const multer = require('multer');
@@ -61,4 +62,4 @@ app.use(function(err, req, res, next) {
 
 
 
-module.exports = { app };
+module.exports = serverless(app);
