@@ -61,5 +61,5 @@ app.use(function(err, req, res, next) {
   });
 
 
-
-module.exports = serverless(app);
+//module.exports = serverless(app);
+module.exports = { app };
